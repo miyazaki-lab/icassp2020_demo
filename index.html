@@ -1,1 +1,678 @@
-"Hello World"
+<!DOCTYPE html>
+<html>
+<head　align="center"> 
+    <div align="center">
+    Kawanaka ICASSP2020 DEMO
+    </div>
+</head>
+<body>
+<p>
+    level1
+</p>
+  <div align="center">  
+  <table border="1" frame="hsides" rules="rows" width="80%"　align="center">
+    <tbody>
+      <tr>
+        <th>file name</th>
+        <th>noisy</th>
+        <th>clean</th>
+        <th>SEGAN</th>
+        <th>Deep Feature Loss</th>
+        <th>Ours</th>
+      </tr>
+      <tr>
+        <td>
+          <b>p232_036.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+	    <source src="wav_test/1_noisy/N_level_8/p232_036.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_8/p232_036.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_8/p232_036.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_8/p232_036.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_ours/N_level_8/p232_036.wav" type="audio/wav">
+    </audio>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>p232_170.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_8/p232_170.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_8/p232_170.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_8/p232_170.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_8/p232_170.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_8/p232_170.wav" type="audio/wav">
+    </audio>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>p232_415.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_8/p232_415.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_8/p232_415.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_8/p232_415.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_8/p232_415.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_ours/N_level_8/p232_415.wav" type="audio/wav">
+    </audio>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>p257_070.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_8/p257_070.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_8/p257_070.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_8/p257_070.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_8/p257_070.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_8/p257_070.wav" type="audio/wav">
+    </audio>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>p257_395.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_8/p257_395.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_8/p257_395.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_8/p257_395.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_8/p257_395.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_8/p257_395.wav" type="audio/wav">
+    </audio>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>
+      N_level7
+  </p>
+  <div align="center">  
+    <table border="1" frame="hsides" rules="rows" width="80%"　align="center">
+      <tbody>
+        <tr>
+          <th>file name</th>
+          <th>noisy</th>
+          <th>clean</th>
+          <th>SEGAN</th>
+          <th>Deep Feature Loss</th>
+          <th>Ours</th>
+        </tr>
+        <tr>
+          <td>
+            <b>p232_080.wav</b>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/1_noisy/N_level_7/p232_080.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/2_clean/N_level_7/p232_080.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/5_SEGAN/N_level_7/p232_080.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/3_Deep_Feature_Losses/N_level_7/p232_080.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/8_ours/N_level_7/p232_080.wav" type="audio/wav">
+      </audio>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <b>p257_170.wav</b>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/1_noisy/N_level_7/p257_170.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/2_clean/N_level_7/p257_170.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/5_SEGAN/N_level_7/p257_170.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/3_Deep_Feature_Losses/N_level_7/p257_170.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/8_Ours/N_level_7/p257_170.wav" type="audio/wav">
+      </audio>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <b>p257_306.wav</b>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/1_noisy/N_level_7/p257_306.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/2_clean/N_level_7/p257_306.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/5_SEGAN/N_level_7/p257_306.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/3_Deep_Feature_Losses/N_level_7/p257_306.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/8_ours/N_level_7/p257_306.wav" type="audio/wav">
+      </audio>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <b>p257_322.wav</b>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/1_noisy/N_level_7/p257_322.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/2_clean/N_level_7/p257_322.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/5_SEGAN/N_level_7/p257_322.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/3_Deep_Feature_Losses/N_level_7/p257_322.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/8_Ours/N_level_7/p257_322.wav" type="audio/wav">
+      </audio>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <b>p257_382.wav</b>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/1_noisy/N_level_7/p257_382.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/2_clean/N_level_7/p257_382.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/5_SEGAN/N_level_7/p257_382.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/3_Deep_Feature_Losses/N_level_7/p257_382.wav" type="audio/wav">
+      </audio>
+          </td>
+          <td align="center">
+      <audio controls style="width:180px;"> 
+          <source src="wav_test/8_Ours/N_level_7/p257_382.wav" type="audio/wav">
+      </audio>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<p>
+    N_level6
+</p>
+<div align="center">  
+    <table border="1" frame="hsides" rules="rows" width="80%"　align="center">
+    <tbody>
+        <tr>
+        <th>file name</th>
+        <th>noisy</th>
+        <th>clean</th>
+        <th>SEGAN</th>
+        <th>Deep Feature Loss</th>
+        <th>Ours</th>
+        </tr>
+        <tr>
+        <td>
+            <b>p232_145.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_6/p232_145.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_6/p232_145.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_6/p232_145.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_6/p232_145.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_ours/N_level_6/p232_145.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p232_189.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_6/p232_189.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_6/p232_189.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_6/p232_189.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_6/p232_189.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_6/p232_189.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p232_261.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_6/p232_261.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_6/p232_261.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_6/p232_261.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_6/p232_261.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_ours/N_level_6/p232_261.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p257_243.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_6/p257_243.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_6/p257_243.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_6/p257_243.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_6/p257_243.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_6/p257_243.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p257_272.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_6/p257_272.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_6/p257_272.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_6/p257_272.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_6/p257_272.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_6/p257_272.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<p>
+    N_level5
+</p>
+<div align="center">  
+    <table border="1" frame="hsides" rules="rows" width="80%"　align="center">
+    <tbody>
+        <tr>
+        <th>file name</th>
+        <th>noisy</th>
+        <th>clean</th>
+        <th>SEGAN</th>
+        <th>Deep Feature Loss</th>
+        <th>Ours</th>
+        </tr>
+        <tr>
+        <td>
+            <b>p232_075.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_5/p232_075.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_5/p232_075.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_5/p232_075.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_5/p232_075.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_ours/N_level_5/p232_075.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p232_153.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_5/p232_153.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_5/p232_153.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_5/p232_153.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_5/p232_153.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_5/p232_153.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p232_176.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_5/p232_176.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_5/p232_176.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_5/p232_176.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_5/p232_176.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_ours/N_level_5/p232_176.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p257_205.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_5/p257_205.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_5/p257_205.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_5/p257_205.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_5/p257_205.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_5/p257_205.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>p257_250.wav</b>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/1_noisy/N_level_5/p257_250.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/2_clean/N_level_5/p257_250.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/5_SEGAN/N_level_5/p257_250.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/3_Deep_Feature_Losses/N_level_5/p257_250.wav" type="audio/wav">
+    </audio>
+        </td>
+        <td align="center">
+    <audio controls style="width:180px;"> 
+        <source src="wav_test/8_Ours/N_level_5/p257_250.wav" type="audio/wav">
+    </audio>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</body>
+</html>
